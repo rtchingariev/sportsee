@@ -1,0 +1,50 @@
+@media only screen and (min-width: 1024px) {
+  .main_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .main_container_left {
+    display: block;
+    width: 80%;
+    background: #eee;
+    padding: 10px;
+  }
+
+  .main_container_right {
+    display: block;
+    width: 20%;
+    background: #ccc;
+    padding: 10px;
+  }
+
+  .BarChart {
+    display: block;
+    width: 100%;
+    background: #ddd;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .LineChart {
+    display: block;
+    background: #ddd;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .RadarChart {
+    display: block;
+    background: #ddd;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .PieChart {
+    display: block;
+    background: #ddd;
+    padding: 10px;
+    margin: 10px 0;
+  }
+}

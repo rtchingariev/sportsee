@@ -1,0 +1,39 @@
+aside {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  width: 117px;
+  height: calc(100vh - 100px);
+  align-items: center;
+}
+
+aside img {
+  width: 48px;
+  height: 48px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside li {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.copyright {
+  display: inline-block;
+  position: absolute;
+  width: 140px;
+  bottom: 80px;
+  transform: rotate(-90deg);
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fff;
+}

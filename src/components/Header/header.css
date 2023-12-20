@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #000;
+}
+
+.logo {
+  width: 178px;
+  height: 60px;
+}
+
+.top_nav {
+  display: block;
+  width: 100lvw;
+  text-align: center;
+}
+
+.top_nav ul {
+  list-style: none;
+}
+
+.top_nav li {
+  display: inline-block;
+  padding: 5px 30px;
+  margin: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fff;
+}
