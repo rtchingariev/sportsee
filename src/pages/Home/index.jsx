@@ -9,12 +9,16 @@ import LineChart from '../../components/Main/linechart.jsx';
 import RadarChart from '../../components/Main/radarchart.jsx';
 import PieChart from '../../components/Main/piechart.jsx';
 
-import getUser from '../../service/api.jsx';
-import { useParams } from 'react-router-dom';
+// import getUser from '../../service/service.jsx';
+// import { useParams } from 'react-router-dom';
 
-const Index = async () => {
-  const userId = useParams();
-  const userData = await getUser(userId);
+const Home = () => {
+  // const userId = useParams();
+  // let user = null;
+  // getUser(userId).then((userData) => {
+  //   user = userData;
+  //   console.log('userData', userData);
+  // });
   return (
     <div className="App">
       <Header />
@@ -26,21 +30,7 @@ const Index = async () => {
         <main style={{ padding: '20px', margin: '20px' }}>
           <HelloUser />
 
-          <div>
-            <h3>Données utilisateur</h3>
-            {userData ? (
-              <div>
-                <p>
-                  Nom: {userData.userInfos.firstName}{' '}
-                  {userData.userInfos.lastName}
-                </p>
-                <p>Âge: {userData.userInfos.age}</p>
-                {/* Ajoutez d'autres champs selon la structure des données */}
-              </div>
-            ) : (
-              <p>Chargement...</p>
-            )}
-          </div>
+          {/* <div>{user.id}</div> */}
 
           <div className="main_container">
             <div className="main_container_left">
@@ -86,4 +76,4 @@ const Index = async () => {
   );
 };
 
-export default Index;
+export default Home;
