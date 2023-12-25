@@ -9,6 +9,8 @@ import LineChart from '../../components/Main/linechart.jsx';
 import RadarChart from '../../components/Main/radarchart.jsx';
 import PieChart from '../../components/Main/piechart.jsx';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 // import getUser from '../../service/service.jsx';
 // import { useParams } from 'react-router-dom';
 
@@ -29,6 +31,12 @@ const Home = () => {
         </aside>
         <main style={{ padding: '20px', margin: '20px' }}>
           <HelloUser />
+
+          <BrowserRouter>
+            <Routes>
+              <Route path="/:userId" exact element={<HelloUser />} />
+            </Routes>
+          </BrowserRouter>
 
           {/* <div>{user.id}</div> */}
 
